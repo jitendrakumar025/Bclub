@@ -1,0 +1,260 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+#logo{
+    cursor: pointer;
+  margin: 2px 4px;
+}
+#logo img{
+   border-radius: 100%;
+height: 80px;
+}
+:root{
+   --navbar-height:60px;
+}
+#navbar::before{
+   content: '';
+   background-color: rgb(172, 79, 79);
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   position:absolute;
+   top: 0px;
+   left: 0px;
+   opacity: 0.2;
+}
+#navbar{
+   top:0%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: sticky;
+}
+#navbar ul{
+   display: flex;
+   align-items: center;
+   font-family: 'Roboto Slab', serif;
+   margin: 0;
+}
+#navbar ul li{
+   list-style: none;
+   font-size: 1.3rem;
+}
+#navbar ul li a{
+   color: rgb(22, 21, 21);
+   display: block;
+   font-weight: bold;
+   padding: 1px 22px;
+   border-radius: 3px;
+   text-decoration: none;
+   transition: 0.5s;
+}
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+   border-radius: 10px;
+}
+.birgar{
+    position: absolute;
+    display:none ;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 5px;
+    margin: 5px 3px;
+
+}
+#Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+#Home::before{
+    content: '';
+    background:url('1.jpg') no-repeat center center/cover ;
+    height: 285px;
+    width: 100%;
+    z-index: -1;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+opacity: 0.7;
+
+}
+#Home p{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.h-primary{
+    font-size: 2rem;
+    font-family: 'Baloo Paaji 2', cursive;
+    text-shadow: 3px 3px 6px white;
+}
+.h-secondary{
+    margin: 0%;
+    font-size: 1.4rem;
+    font-family: 'Roboto Slab', serif;
+}
+.center{
+    text-align: center;
+}
+ @media only screen and ( max-width: 723px) {
+        .nav-list , .navbar{
+            flex-direction: column;
+
+        }
+        .birgar{
+            display:inline-block ;
+        }
+        .h-nav{
+            height: 216px;
+        }
+        .v-class{
+            opacity: 0;
+        }
+        .logo{
+            width: 50%;
+            height: 50%;
+            left: 5%;
+            top: 10px;
+        }
+        #Home::before{
+            height: 550px;
+        }
+        #Home{
+            margin-top: 136px;
+        }
+       
+ }
+#product{
+    margin-top: 70px;
+    border: 2px solid black;
+}
+ .pp{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+ } 
+ .pp img{
+     margin-top: 13px;
+     height: 150px;
+     transition: all 0.3s ease-out;
+ }  
+ .pp img:hover{
+    transform: scale(1.09,1.09);
+ }
+ .box{
+     /* border: 2px solid red; */
+     width: 400px;
+     margin: 12px;
+     box-shadow: 5px 6px 8px black;
+     background-color: rgb(248, 244, 240);
+     text-align: center;
+     border-radius: 6px;
+ }
+ .testimonial{
+    display: flex;
+    flex-wrap: wrap;
+}
+.user{
+    display: flex;
+    background-color: rgba(69, 121, 86, 0.179); 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+ .box1{
+    /* border: 2px solid red; */
+    width: 400px;
+    margin: 12px;
+    box-shadow: 3px 4px 6px rgb(30, 27, 27);
+    background-color: rgb(248, 244, 240);
+    text-align: center;
+    border-radius: 6px;
+    line-height: 25px;
+    transition: all 0.3s ease-out;
+ }
+ .box1:hover{
+    transform: scale(1.1,1.1);
+ }
+ .box1 img{
+    margin: 13px;
+    border: 2px solid blue;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+ }
+ .name{
+     font-weight: bold;
+ }
+.feed{
+     background:url('3.jpg') no-repeat center center/cover ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    
+ }
+ form input,form textarea{
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Baloo Paaji 2', cursive;
+    width: 100%;
+    padding: 4px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+form h2{
+    color: white;  
+}
+form label{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem; 
+    color: white;  
+}
+form .btn{
+    background-color: rgb(17, 17, 238);
+    cursor: pointer;
+    padding: 4px 9px;
+    border-radius: 9px;
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+form .btn:hover{
+    background-color: rgb(9, 9, 120);
+}
+footer{
+    background-color:rgb(36, 35, 35);
+    text-align: center;
+    color: white;
+}
+footer a{
+    font-size: 43px;
+}
+footer img{
+    margin-left: 13px;
+    height: 40px;
+    transition: all 0.3s ease-out;
+    
+}
+.bxl-amazon{
+    color: blue;
+    transition: all 0.3s ease-out;
+}
+.bxl-amazon:hover,footer img:hover{
+    transform: scale(2,2);
+}
